@@ -135,8 +135,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/huang/test_ws/build/ball_detect/cmake_install.cmake")
   include("/home/huang/test_ws/build/test/cmake_install.cmake")
-  include("/home/huang/test_ws/build/tfmini_ros/cmake_install.cmake")
+  include("/home/huang/test_ws/build/TFmini-ROS/tfmini_ros/cmake_install.cmake")
 
 endif()
 

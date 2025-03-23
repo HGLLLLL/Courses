@@ -1,2 +1,2 @@
-test:tfmini_ros
+TFmini-ROS/tfmini_ros:ball_detect:test
 -DCATKIN_DEVEL_PREFIX=/home/huang/test_ws/devel -DCMAKE_INSTALL_PREFIX=/home/huang/test_ws/install -G Unix Makefiles

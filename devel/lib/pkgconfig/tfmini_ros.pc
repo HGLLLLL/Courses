@@ -3,6 +3,6 @@ prefix=/home/huang/test_ws/devel
 Name: tfmini_ros
 Description: Description of tfmini_ros
 Version: 0.0.1
-Cflags: -I/home/huang/test_ws/src/tfmini_ros/include
+Cflags: -I/home/huang/test_ws/src/TFmini-ROS/tfmini_ros/include
 Libs: -L${prefix}/lib 
 Requires: 

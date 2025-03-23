@@ -1,0 +1,8 @@
+prefix=/home/huang/test_ws/install
+
+Name: ball_detect
+Description: Description of ball_detect
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lball_detect
+Requires: rospy roscpp std_msgs message_runtime

@@ -1,0 +1,5 @@
+<launch>
+  
+  <node pkg="test" name="print_info" type="print_info" output="screen"/>
+
+</launch>

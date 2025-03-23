@@ -1,10 +1,9 @@
 <launch>
-  <node pkg="tfmini_ros" type="lidar_public" name="lidar_public">
-    <param name="serial_port" type="string" value="/dev/ttyUSB0" />
-    <param name="baud_rate" type="int" value="115200" />
-  </node>
 
-  <node pkg="test" type="lidar_angle" name="lidar_angle">
+  <include file="$(find tfmini_ros)/launch/tfmini.launch" />
+ 
+
+  <node pkg="test" type="lidar_angle" name="lidar_angle" output="screen" >
     <param name="lidar_topic" value="/tfmini_ros_node/TFmini" />
   </node>
 

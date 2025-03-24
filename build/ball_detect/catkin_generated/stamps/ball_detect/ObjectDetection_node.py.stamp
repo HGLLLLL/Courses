@@ -76,7 +76,7 @@ class ObjectDetection:
         for box in boxes:
             x1, y1, x2, y2, conf, cls = box
             if conf < self.conf_threshold:
-                continue  # 過濾掉低信心的檢測
+                continue 
 
             x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
             width = x2 - x1
@@ -93,7 +93,7 @@ class ObjectDetection:
                 'confidence': conf
             })
 
-            # 標記框內顯示：類型與信心值
+            # 標記框內顯示：type and condidence
             label = f"{self.class_to_label(cls)}: {conf:.2f}"
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
             cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
@@ -126,11 +126,10 @@ class ObjectDetectionPublisher:
             frame = self.monitor.get_frame()
 
             if frame is not None and frame.size > 0:
-                # 執行物件檢測
+                # 執行Object detect
                 frame_processed, detections = self.object_detector(frame)
                 cv2.imshow('Object Detection', frame_processed)
 
-                # 準備 ROS 訊息，包含每個 bounding box 的資訊（物件類型與信心值）
                 bounding_boxes = BoundingBoxArray()
                 bounding_boxes.header = Header()
                 bounding_boxes.header.stamp = rospy.Time.now()
@@ -142,7 +141,7 @@ class ObjectDetectionPublisher:
                     bbox.w = detection['w']
                     bbox.h = detection['h']
                     bbox.bbox_class = detection['class']
-                    # 若 BoundingBox 訊息有 confidence 欄位，可直接設置，否則可考慮透過其他方式傳遞此資訊
+
                     try:
                         bbox.confidence = detection['confidence']
                     except AttributeError:

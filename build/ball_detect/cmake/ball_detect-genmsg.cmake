@@ -24,7 +24,7 @@ add_custom_target(_ball_detect_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg" NAME_WE)
 add_custom_target(_ball_detect_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ball_detect" "/home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg" "ball_detect/BoundingBox:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ball_detect" "/home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg" "std_msgs/Header:ball_detect/BoundingBox"
 )
 
 #
@@ -42,7 +42,7 @@ _generate_msg_cpp(ball_detect
 _generate_msg_cpp(ball_detect
   "/home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg;/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg/Header.msg;/home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ball_detect
 )
 
@@ -83,7 +83,7 @@ _generate_msg_eus(ball_detect
 _generate_msg_eus(ball_detect
   "/home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg;/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg/Header.msg;/home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ball_detect
 )
 
@@ -124,7 +124,7 @@ _generate_msg_lisp(ball_detect
 _generate_msg_lisp(ball_detect
   "/home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg;/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg/Header.msg;/home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ball_detect
 )
 
@@ -165,7 +165,7 @@ _generate_msg_nodejs(ball_detect
 _generate_msg_nodejs(ball_detect
   "/home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg;/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg/Header.msg;/home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ball_detect
 )
 
@@ -206,7 +206,7 @@ _generate_msg_py(ball_detect
 _generate_msg_py(ball_detect
   "/home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg;/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg/Header.msg;/home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ball_detect
 )
 

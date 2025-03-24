@@ -81,8 +81,8 @@ ball_detect/CMakeFiles/ball_detect_generate_messages_eus: /home/huang/test_ws/de
 
 /home/huang/test_ws/devel/share/roseus/ros/ball_detect/msg/BoundingBoxArray.l: /home/huang/miniforge3/envs/ros_env/lib/geneus/gen_eus.py
 /home/huang/test_ws/devel/share/roseus/ros/ball_detect/msg/BoundingBoxArray.l: /home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg
-/home/huang/test_ws/devel/share/roseus/ros/ball_detect/msg/BoundingBoxArray.l: /home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg
 /home/huang/test_ws/devel/share/roseus/ros/ball_detect/msg/BoundingBoxArray.l: /home/huang/miniforge3/envs/ros_env/share/std_msgs/msg/Header.msg
+/home/huang/test_ws/devel/share/roseus/ros/ball_detect/msg/BoundingBoxArray.l: /home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/huang/test_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from ball_detect/BoundingBoxArray.msg"
 	cd /home/huang/test_ws/build/ball_detect && ../catkin_generated/env_cached.sh /home/huang/miniforge3/envs/ros_env/bin/python3.11 /home/huang/miniforge3/envs/ros_env/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg -Iball_detect:/home/huang/test_ws/src/ball_detect/msg -Istd_msgs:/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg -p ball_detect -o /home/huang/test_ws/devel/share/roseus/ros/ball_detect/msg
 

@@ -93,10 +93,19 @@ class ObjectDetection:
                 'confidence': conf
             })
 
+            ########################################################
+            ######################  Edit Here  #####################
+            ########################################################
+            
             # 標記框內顯示：type and condidence
             label = f"{self.class_to_label(cls)}: {conf:.2f}"
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+            #format: frame, text, position, font, font size, color, thickness
             cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
+            ########################################################
+            ########################## End #########################
+            ########################################################
 
         return frame, detections
 

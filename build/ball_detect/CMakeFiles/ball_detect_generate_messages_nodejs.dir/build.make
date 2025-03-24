@@ -76,8 +76,8 @@ ball_detect/CMakeFiles/ball_detect_generate_messages_nodejs: /home/huang/test_ws
 
 /home/huang/test_ws/devel/share/gennodejs/ros/ball_detect/msg/BoundingBoxArray.js: /home/huang/miniforge3/envs/ros_env/lib/gennodejs/gen_nodejs.py
 /home/huang/test_ws/devel/share/gennodejs/ros/ball_detect/msg/BoundingBoxArray.js: /home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg
-/home/huang/test_ws/devel/share/gennodejs/ros/ball_detect/msg/BoundingBoxArray.js: /home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg
 /home/huang/test_ws/devel/share/gennodejs/ros/ball_detect/msg/BoundingBoxArray.js: /home/huang/miniforge3/envs/ros_env/share/std_msgs/msg/Header.msg
+/home/huang/test_ws/devel/share/gennodejs/ros/ball_detect/msg/BoundingBoxArray.js: /home/huang/test_ws/src/ball_detect/msg/BoundingBox.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/huang/test_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from ball_detect/BoundingBoxArray.msg"
 	cd /home/huang/test_ws/build/ball_detect && ../catkin_generated/env_cached.sh /home/huang/miniforge3/envs/ros_env/bin/python3.11 /home/huang/miniforge3/envs/ros_env/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg -Iball_detect:/home/huang/test_ws/src/ball_detect/msg -Istd_msgs:/home/huang/miniforge3/envs/ros_env/share/std_msgs/cmake/../msg -p ball_detect -o /home/huang/test_ws/devel/share/gennodejs/ros/ball_detect/msg
 

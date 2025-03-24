@@ -67,7 +67,7 @@ include ball_detect/CMakeFiles/_ball_detect_generate_messages_check_deps_Boundin
 include ball_detect/CMakeFiles/_ball_detect_generate_messages_check_deps_BoundingBoxArray.dir/progress.make
 
 ball_detect/CMakeFiles/_ball_detect_generate_messages_check_deps_BoundingBoxArray:
-	cd /home/huang/test_ws/build/ball_detect && ../catkin_generated/env_cached.sh /home/huang/miniforge3/envs/ros_env/bin/python3.11 /home/huang/miniforge3/envs/ros_env/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ball_detect /home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg ball_detect/BoundingBox:std_msgs/Header
+	cd /home/huang/test_ws/build/ball_detect && ../catkin_generated/env_cached.sh /home/huang/miniforge3/envs/ros_env/bin/python3.11 /home/huang/miniforge3/envs/ros_env/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ball_detect /home/huang/test_ws/src/ball_detect/msg/BoundingBoxArray.msg std_msgs/Header:ball_detect/BoundingBox
 
 _ball_detect_generate_messages_check_deps_BoundingBoxArray: ball_detect/CMakeFiles/_ball_detect_generate_messages_check_deps_BoundingBoxArray
 _ball_detect_generate_messages_check_deps_BoundingBoxArray: ball_detect/CMakeFiles/_ball_detect_generate_messages_check_deps_BoundingBoxArray.dir/build.make

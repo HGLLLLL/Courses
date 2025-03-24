@@ -3,6 +3,6 @@
     <!-- <param name="camera_id" value="/dev/camera" /> -->
     <param name="~camera_id" value="/dev/video0" />
     <param name="~yolo_model" value="$(find ball_detect)/scripts/best0703.pt" />
-    <param name="~conf_threshold" value="0.1" />
+    <param name="~conf_threshold" value="0.6" />
   </node>
 </launch>
